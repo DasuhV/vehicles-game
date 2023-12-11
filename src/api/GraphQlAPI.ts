@@ -26,7 +26,6 @@ export const getVehicles = async (query: string,lang:LangType) => {
 			query,
 			variables:{"lang": lang},
 			headers: {
-				
 				'Access-Control-Allow-Origin': 'http://localhost:5173',
 			},
 		}

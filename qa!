@@ -1,0 +1,17 @@
+[33mcommit e5e8f628de35e7d610cb045157fcd37982030e0d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: DanielLu <lushnikovdaniel2709@gmail.com>
+Date:   Mon Dec 11 16:23:10 2023 +0300
+
+    adding cleaning margin common browser settings
+
+[33mcommit c11cb45cca87a1460dcce98c6788c0dde1996345[m
+Author: DanielLu <lushnikovdaniel2709@gmail.com>
+Date:   Mon Dec 11 16:21:00 2023 +0300
+
+    delete margin from common browser settings
+
+[33mcommit 694e83b32a43a30c71320b577b4bfc2a0d7c3ca1[m
+Author: DanielLu <lushnikovdaniel2709@gmail.com>
+Date:   Mon Dec 11 16:13:15 2023 +0300
+
+    first commit
