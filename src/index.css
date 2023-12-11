@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+:root {
+	color-scheme: light dark;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	/* variables */
+	--_hue: 42;
+	--_border-radius: 8px;
+	--_speed: 300ms;
+	/* ligth mode */
+	--bg1--light: #184e6b;
+	--bg2--light: #11151e;
+	--bg2-transparent--light: #070d13d3;
+	--bg1-hover--light: #0291aa;
+	--text-color1--light: var(--_hue), 10%, 92%;
+	--text-color2--light: var(--_hue), 11%, 62%;
+	--text-color3--light: var(--_hue), 80%, 67%;
+	--border--light: 1px solid #364656;
+	/* dark mode */
+	--bg1--dark: #184e6b;
+	--bg2--dark: #11151e;
+	--bg2-transparent--dark: #070d137d;
+	--bg1-hover--dark: #0291aa;
+	--text-color1--dark: var(--_hue), 10%, 92%;
+	--text-color2--dark: var(--_hue), 11%, 62%;
+	--text-color3--dark: var(--_hue), 80%, 67%;
+	--border--dark: 1px solid #364656;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg1: var(--bg1--light);
+		--bg2: var(--bg2--light);
+		--bg2-transparent: var(--bg2-transparent--light);
+		--bg1-hover: var(--bg1-hover--light);
+		--text-color1: var(--text-color1--light);
+		--text-color2: var(--text-color2--light);
+		--text-color3: var(--text-color3--light);
+		--border: var(--border--light);
+		color-scheme: light;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg1: var(--bg1--dark);
+		--bg2: var(--bg2--dark);
+		--bg2-transparent: var(--bg2-transparent--dark);
+		--bg1-hover: var(--bg1-hover--dark);
+		--text-color1: var(--text-color1--dark);
+		--text-color2: var(--text-color2--dark);
+		--text-color3: var(--text-color3--dark);
+		--border: var(--border--dark);
+		color-scheme: dark;
+	}
+}
+
+:root{
+	min-width: 100vw;
+	min-height: 100vh;
+}
+html,
+body {
+	min-width: 100vw;
+	min-height: 100vh;
+	background: url(https://wows-media-content.korabli.su/common-media-files/armory/background/main_background.jpg)
+			top center/cover no-repeat,
+		linear-gradient(0, var(--bg2--light), var(--bg1--light));
+}

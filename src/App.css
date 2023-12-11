@@ -1,0 +1,64 @@
+/* общие стили*/
+.app {
+	display: flex;
+	flex-direction: column;
+	max-width: 1240px;
+	margin: 0 auto;
+	height:100vh;
+	height: 100svh;
+	width: 100vw;
+	color: hsl(var(--text-color1));
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--bg2);
+	padding: 20px;
+}
+.header select {
+	cursor: pointer;
+	height: 30px;
+	background-color: var(--bg1);
+	color: var(--text-color2);
+	border: var(--border);
+	border-radius: var(--border-radius);
+}
+.header select:hover {
+	filter: brightness(2);
+}
+.header option {
+	cursor: pointer;
+	filter: brightness(2);
+}
+.main {
+	flex: 1 1 auto;
+	position: relative;
+}
+.main-arr-container {
+	
+	margin-top: 1em;
+	transition: all var(--_speed);
+}
+
+.main-filter {
+	margin: 2.5px 0;
+}
+.main-filter-icon {
+	cursor: pointer;
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	margin: 5px 0;
+}
+.main-filter-icon svg {
+	color: var(--text-color1);
+}
+.main-filter-icon svg:hover {
+	filter: brightness(1.2);
+}
+
+.footer {
+	background-color: var(--bg2);
+	text-align: center;
+}

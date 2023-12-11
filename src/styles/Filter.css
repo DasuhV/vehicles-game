@@ -1,0 +1,74 @@
+/* для блока фильтр находящегося в hidden*/
+.filter-main {
+	position: absolute;
+	width: 100%;
+	border-radius: var(--border-radius);
+	transition: all var(--_speed);
+	top: -400px;
+	opacity: 0;
+	overflow: hidden;
+}
+.filter-main.active {
+	position: absolute;
+	top: 2.6em;
+	opacity: 1;
+	overflow: visible;
+	background-color: var(--bg2-transparent);
+}
+.filter-content {
+	display: flex;
+	text-align: left;
+	padding: 10px;
+	gap: 100px;
+}
+.filter-content h3 {
+	margin-bottom: 10px;
+}
+/* для элемента input c type="checkbox" */
+.checkbox > input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.checkbox > span {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.checkbox > span::before {
+	content: '';
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border: 1px solid hsl(var(--text-color2));
+	border-radius: 0.25em;
+	margin-right: 0.5em;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+/* стили при наведении курсора на checkbox */
+.checkbox > input:not(:disabled):not(:checked) + span:hover::before {
+	filter: brightness(1.2);
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.checkbox > input:focus + span::before {
+	box-shadow: 0 0 0 0.2rem var(--bg2);
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.checkbox > input:checked + span::before {
+	background-image: url('../public/checkMark.png');
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.checkbox > input:disabled + span::before {
+	border-color: var(--border);
+}

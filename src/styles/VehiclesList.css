@@ -1,0 +1,52 @@
+.vehicle-list {
+	overflow-x: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	height: calc(100vh - 160px);
+	transition: all var(--_speed);
+	justify-content: space-between;
+}
+
+.vehicle-list::-webkit-scrollbar {
+	background: hsla(0, 0%, 100%, 0.09);
+	width: 5px;
+	cursor: pointer;
+}
+.vehicle-list::-webkit-scrollbar-thumb {
+	cursor: pointer;
+	border-radius: 3px;
+	background-color: hsl(var(--text-color2));
+}
+.vehicle-item-body img {
+	width: 100%;
+}
+.vehicle-item {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg2-transparent);
+	border-radius: var(--border-radius);
+	color: hsl(var(--text-color1));
+	padding: 10px;
+	width: 47%;
+}
+
+.vehicle-item-header {
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 0.5rem;
+	font-weight: 700;
+	overflow: hidden;
+	white-space: nowrap;
+	color: hsl(var(--text-color3));
+}
+.vehicle-name {
+	font-size: 1.8rem;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+}
+.vehicle-info-description {
+	font-size: 1.3rem;
+}
