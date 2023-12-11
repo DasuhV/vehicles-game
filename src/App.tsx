@@ -6,7 +6,7 @@ import Header from './components/Header'
 import Main from './components/Main'
 
 function App() {
-	const [lang, setLang] = useState<LangType>('ru')
+	const [lang, setLang] = useState<LangType>('en')
 		console.log('render')
 	return (
 		<div className='app'>
